@@ -40,3 +40,10 @@
 - __superscript, subscript and small text__ : subscript like in H<sub>2</sub>O formula and on the other side if mathematical expression for example x<sup>2</sup> and also footnotes<sup>[3]</sup>
 - here is [example on codepen](https://codepen.io/jensimmons/pen/LYPQdMV)
 - for `small` you can use it to markup small print like in legal documents, frequently used in copyright information for example
+## 3 Understanding the power of HTML
+- [some code to investigate with Inspector](https://codepen.io/jensimmons/pen/xxKjYRR) - on each browser you invoke Inspector with `ctrl+shift+I`, look at the tab `Elements`
+- good idea is to investigate code from other websites to see how people are using elements and tags
+- __HTML attributes__ : global and local attributes, common global are: class, id, lang, dir and many more
+- __ARIA roles__ : for accessibility situations, provide accessible information about a specific element
+- __Formatting HTML__ : comments, you have block comments and inline comments, the closing slash is not needed for some elements like img, br, hr, input and else
+- __Weird characters__ : also called entities, you have `&nbsp;` which means non breaking space you mark a place where you want the text to stay together, opposite is `<wbr>` where the text if needed breaks at this place, but if you want the text to break with a dash indicating that the word on the next line is part of the previous word you use `&shy;` 

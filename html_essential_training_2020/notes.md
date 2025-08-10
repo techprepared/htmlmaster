@@ -75,3 +75,15 @@
  - __Variant with width of the viewport__ : [demo of viewport width](https://codepen.io/jensimmons/pres/WNeyPXL), and [more demo viewport width](https://codepen.io/jensimmons/pres/wvwXOYa) - the example works in firefox but not in edge at the time of trying the code
  - __Responsive pictures__ : picture element, [demo of the code](https://codepen.io/jensimmons/pen/MWgXRgE?editors=1000), combining [multiple techniques](https://codepen.io/jensimmons/pen/wvwXLQa?editors=1000)
  - __Figure and figcaption__ elements: enclose img with figure and inside add figcaption, provide browser with more semantic information about the picture, use figure element also for interactive graphic
+ ## 6 Media
+ - __Audio element__ : [example of audio element](https://codepen.io/jensimmons/pen/BaBVdWp?editors=1000), as you see there are `controls` attribute and `source` elements, there is also `loop` and `autoplay` 
+ - we need to use multiple source elements because of compatibility issues, so the src attribute becomes source element
+ - we have mp3, ogg, aac, wav, aiff and the browser use the first playable format it founds
+ - put some fallback text before the closing audio element to inform users who are not able to play any of the files
+ - __Video element__ : like the audio element there are opening and closing tags, point to sources with source element
+ - file size is important when working with video
+ - very popular codecs are h.264-not open sources, WebM video codec but still in development, also AV1 is on the horizon, HEVC h.265
+ - [demo with video element](https://codepen.io/jensimmons/pres/VwZdzBe)
+ - there is no solution how we send different video file under different network conditions and different screens, this is because the network speed is often variable and for each fetch the browser need to make a decision which quality is appropriate - adaptive bitrate streaming and requires a server farm of transcoding robots
+ - __Captions and subtitles__ : some people needs captions and subtitles to understand the content. We use `track` element and provide txt document. On the web we want the `wvtt` format `<track src="somefile.vtt">` and [for the demo follow the link](https://codepen.io/jensimmons/pres/KKPevBe),we use `kind=captions` and `label=english` to show english as a choice on the video player controls, `srclang="en"` to tell the browser what is the language, there is also `kind="descriptions"` for a video where the content is described if a person can't look at it, `kind="chapters"` gives the user a way to jump around the chapters
+ - __Embed other media through iframes__ : you can embed a map from Google, code demo from Codepen, each service offers a way to embed content, there are some security considerations

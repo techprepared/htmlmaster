@@ -130,3 +130,12 @@
 - __Form element different types__ : few of the options are `password,  search, tel, date, color, file, checkbox`
 - `textarea` - when the content is bigger than just a single line, there is cols and rows in HTML but can use CSS for this case for sure
 - you have `fieldset` enclosing element to group form elements and also `legend` element to be more descriptive
+## 10 Structuring tabular data
+- tables are very standardized and except for an email usage their have a lot of options
+- __Elements__ : table, thead, tr, th, td
+- [another example this time of tables](https://codepen.io/jensimmons/pres/WNeKpro?editors=1000), look for more ways to build tables using also elements thead, tbody, tfoot
+## Conclusion
+- check for more guides and resources on [mozilla.org](https://developer.mozilla.org)
+- [another source is whatwg](https://html.spec.whatwg.org/multipage),  the standard itself
+- [w3.org](https://www.w3.org/TR/WCAG21) - web content accessibility guidelines WCAG 2.1
+- next step is getting into CSS

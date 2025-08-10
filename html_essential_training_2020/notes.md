@@ -111,4 +111,22 @@
     - `<link rel="preload" href="myFont.woff2" as="font" type="font/woff2" crossorigin="anonymous"`>
 - most important things go at the top and less important afterwards 
 - `<script src="my-javascript-file.js"></script>`
-
+- __Structuring content__ : it is about the 6 structural new elements: main, header, footer, article, section, aside
+- main element wraps around the main content of the page
+- header and footer for headers and footers on the page
+- article start with headings and more information, that could be a header
+- semantics win over visuals
+- article might be a blog post, short snip, teaser card, a tweet or else
+- section, long essay broken into chunks, or zones about different topics, often has its own headline
+- aside something off to the side
+- look at different pages on the web and inspect them with Inspector
+## 9 Forms and Interactive elements
+- let's create a form
+- label bounds to input element on label you have for and on input you have id with the same name
+- you have a lot of attributes on your disposal in a form and you can put your attributes in no particular order
+- investigate type attribute, the functionality is very rich and you get also form validation for free
+- placeholder is a hint text shown to each user giving them an example of what type of information is expected
+- value attribute gives you an opportunity to place a default value which is expected for most of the cases that can be overwritten by the user, it is a small convenience that can save a bit of time
+- __Form element different types__ : few of the options are `password,  search, tel, date, color, file, checkbox`
+- `textarea` - when the content is bigger than just a single line, there is cols and rows in HTML but can use CSS for this case for sure
+- you have `fieldset` enclosing element to group form elements and also `legend` element to be more descriptive

@@ -92,4 +92,23 @@
  - lang attribute has language value but also script and alphabet, if on a page there are many languages used you can specify lang attribute for each such part
  - some languages flows from right to left dir="rtl", also charset UTF-8 is very common as it represents most of the used characters
  - __Generic elements - div and span__ : sometimes there is no meaning in a needed element you have div for block level and span for inline [short demo of it](https://codepen.io/jensimmons/pen/dybjNLQ?editors=1000), div and span can take all of the global attributes
- 
+ ## 8 Putting it all together
+- start by opening web browser, type in an URL, or maybe click on a button from an app, send an http request
+- now you have:
+    - database involved
+    - css files for styling
+    - js files for interactivity
+    - image files
+    - media files
+    - possibly advertisements 
+- the browser reads an html file and does according to instructions, the first file returned is like a headquarters, the file returned has a doctype declaration, html tag, head element and body element
+- meta element for meta information only inside the head `<meta name="viewport">` and `<meta name="description">`
+- the link element - css files, fonts, favicons
+- rel attributes tells which kind of asset it is
+- href attribute gives the path to an asset
+    - `<link href="main.css" rel="stylesheet">`
+    - `<link rel="icon" href="favicon.ico">`
+    - `<link rel="preload" href="myFont.woff2" as="font" type="font/woff2" crossorigin="anonymous"`>
+- most important things go at the top and less important afterwards 
+- `<script src="my-javascript-file.js"></script>`
+

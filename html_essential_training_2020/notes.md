@@ -47,3 +47,11 @@
 - __ARIA roles__ : for accessibility situations, provide accessible information about a specific element
 - __Formatting HTML__ : comments, you have block comments and inline comments, the closing slash is not needed for some elements like img, br, hr, input and else
 - __Weird characters__ : also called entities, you have `&nbsp;` which means non breaking space you mark a place where you want the text to stay together, opposite is `<wbr>` where the text if needed breaks at this place, but if you want the text to break with a dash indicating that the word on the next line is part of the previous word you use `&shy;` 
+## 4 Linking and navigation
+- __Links__: by default `a` element is an inline element, can wrap link around img element, can wrap around teaser element
+- there are absolute urls like `https://example.com/2020/10/14/my-blog-post`
+- there are relative urls in two forms - first if we have `/` we instruct the browser to go and look from the top level of the site, the second type is if we omit the leading slash then the path is relative to our current position of the file we are working in from
+- for example we have `/images/logo.gif` and `../images/logo.gif` for a styles.css file located one folder down in folder names CSS
+- every time we told a browser go and look at URL which is a folder the browser looks for index.html file inside, it works only for HTML files and NOT for CSS and image files
+- `href="/people/index.html"` , `href="/people/"` , `href="/people"` all of this three urls goes to the exactly same place
+- __Navigation__ : `<nav aria-label='Breadcrumb'>`, `<nav role="navigation" aria-label="main-menu">`

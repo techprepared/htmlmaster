@@ -55,3 +55,23 @@
 - every time we told a browser go and look at URL which is a folder the browser looks for index.html file inside, it works only for HTML files and NOT for CSS and image files
 - `href="/people/index.html"` , `href="/people/"` , `href="/people"` all of this three urls goes to the exactly same place
 - __Navigation__ : `<nav aria-label='Breadcrumb'>`, `<nav role="navigation" aria-label="main-menu">`
+## 5 Images
+- `img` tag, src attribute, alt attribute and possibly width and height
+- make alt descriptive if for some reason the image doesn't load
+- width and height are optional
+- if we explicitly tell the browser what dimensions to use, it doesn't have to look at the file for sizes after the image file has been downloaded
+- on old pages when the browser downloads the image without knowing the size the content of the page keep moving until the image is downloaded, if internet connection is too slow this is very annoying
+- __Image formats__ : high quality vs small file size
+- gif is the oldest, good for illustration, 256 colors, good compression for large areas of single color, can do transparency with jagged edges, can do also animation
+- svg, logs icons, it is a math instruction, made of vector, scale very smoothly, very small file size, if you can use it use it
+- jpg image format for compressing photos but also there is webp alternative around, if not compressed very big file size
+- png, good if you need transparency, good at compression
+- you need to experiment to find what works and what not
+- consider the physical size, the image format and compressing settings
+- __Responsive images__  based on density: you don't want to deliver high res data to small screens and increase download time
+- use the power of html and list several image files to deliver to different screens look at [example at codepen.io](https://codepen.io/jensimmons/pen/QWLxgMy), the 1x, 2x and more in the code sample is the pixel density - where for one pixel of your image there are 2 or more pixels available on the device
+- you create many copies of different dimensions and server what is appropriate
+- [example of different sizes](https://codepen.io/jensimmons/pen/jONeawJ), here the size is set for different screen density
+ - __Variant with width of the viewport__ : [demo of viewport width](https://codepen.io/jensimmons/pres/WNeyPXL), and [more demo viewport width](https://codepen.io/jensimmons/pres/wvwXOYa) - the example works in firefox but not in edge at the time of trying the code
+ - __Responsive pictures__ : picture element, [demo of the code](https://codepen.io/jensimmons/pen/MWgXRgE?editors=1000), combining [multiple techniques](https://codepen.io/jensimmons/pen/wvwXLQa?editors=1000)
+ - __Figure and figcaption__ elements: enclose img with figure and inside add figcaption, provide browser with more semantic information about the picture, use figure element also for interactive graphic

@@ -87,3 +87,9 @@
  - there is no solution how we send different video file under different network conditions and different screens, this is because the network speed is often variable and for each fetch the browser need to make a decision which quality is appropriate - adaptive bitrate streaming and requires a server farm of transcoding robots
  - __Captions and subtitles__ : some people needs captions and subtitles to understand the content. We use `track` element and provide txt document. On the web we want the `wvtt` format `<track src="somefile.vtt">` and [for the demo follow the link](https://codepen.io/jensimmons/pres/KKPevBe),we use `kind=captions` and `label=english` to show english as a choice on the video player controls, `srclang="en"` to tell the browser what is the language, there is also `kind="descriptions"` for a video where the content is described if a person can't look at it, `kind="chapters"` gives the user a way to jump around the chapters
  - __Embed other media through iframes__ : you can embed a map from Google, code demo from Codepen, each service offers a way to embed content, there are some security considerations
+ ## 7 More ways to identify content
+ - `lang="en-US"` - lang attribute is used to identify language, it is often set on `html` elements as it wraps all of other elements on a page
+ - lang attribute has language value but also script and alphabet, if on a page there are many languages used you can specify lang attribute for each such part
+ - some languages flows from right to left dir="rtl", also charset UTF-8 is very common as it represents most of the used characters
+ - __Generic elements - div and span__ : sometimes there is no meaning in a needed element you have div for block level and span for inline [short demo of it](https://codepen.io/jensimmons/pen/dybjNLQ?editors=1000), div and span can take all of the global attributes
+ 

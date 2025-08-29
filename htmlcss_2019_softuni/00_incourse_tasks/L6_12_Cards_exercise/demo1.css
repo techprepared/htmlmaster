@@ -1,0 +1,37 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    padding:2rem;
+}
+
+.container {
+    background: black;
+    color:white;
+    font-size:2rem;
+    display:flex;
+    flex-wrap:wrap;
+    padding:0.3em;
+    align-items:center;
+    min-height:10em;
+
+  
+
+    /* justify-content:center; */
+}
+
+.container .item {
+    background:red;
+    /* margin:0.2em; */
+    padding:0.1em;
+    /* flex:0 1 5em; */
+}
+
+.container .item:nth-child(3) {
+    margin-left:auto;
+    flex-grow:1;
+    background:green;
+    padding:0;
+}
